@@ -11,10 +11,13 @@ Once you have the required credentials, you can either store them on the main sc
 ## How to use the script
 ### Interactive execution
 `./sendtweet`
+
 Executing the script without any arguments or standard input will result in a prompt in which the user can input the text to be tweeted.
 ### Through a pipe
 `somecommand | ./sendtweet`
+
 The output of the piped command (*stdout*) will be tweeted. Receiving a newline will cause it to tweet the previous content and discard any future output.
 ### Using arguments
 `./sendtweet "tweet content"`
+
 The text provided in the first argument will be tweeted, any other arguments will be ignored. This is the preferred way if your tweet contains newlines (since you can pass `$'a tweet\nwith several lines'`). Arguments have preference over piped input.
