@@ -1,0 +1,4 @@
+CONSUMER_KEY='If you define these values'
+CONSUMER_SECRET='directly in the main script'
+ACCESS_TOKEN='then you can safely'
+ACCESS_TOKEN_SECRET='delete this file.'
