@@ -72,7 +72,7 @@ if [ -z "$1" ]; then
     die 'Cannot send an empty tweet!'
 fi
 
-if [ $(expr length "$1") -gt 140 ]; then
+if [ ${#1} -gt 140 ]; then
     die 'Tweet is more than 140 characters long!'
 fi
 
